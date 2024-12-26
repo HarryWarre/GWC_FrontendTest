@@ -1,0 +1,131 @@
+.testimonial-section {
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #283248;
+    padding: 50px 0;
+    gap: 80px;
+}
+
+.testimonial-section h2 {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: white;
+}
+.testimonial-navigation {
+    display: flex;
+     align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+.testimonial-navigation button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+   color: white;
+    cursor: pointer;
+}
+
+.dot-container {
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    position: relative;
+}
+
+.dot.active {
+    background-color: white;
+}
+.testimonial-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1400px;
+}
+
+.testimonial-item {
+    background: white;
+    border-radius: 30px;
+    padding: 30px;
+    width: 40%;
+}
+.testimonial-content {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.testimonial-content img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.testimonial-content p {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 28px;
+    color: #191919;
+    margin-bottom: 20px;
+}
+
+.testimonial-info {
+ display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+	position: relative;
+}
+  .testimonial-info span:first-child {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 32px;
+    color: #191919;
+}
+
+.testimonial-info span:nth-child(2) {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #191919;
+}
+.testimonial-info .quote-icon {
+    position: absolute;
+    right: 0px;
+    bottom: -4px;
+}
+
+@media (max-width: 768px) {
+    .testimonial-list{
+        flex-direction: column;
+        align-items: center;
+    }
+   .testimonial-item{
+        width: 50%;
+   }
+    .testimonial-navigation button {
+        display: none;
+    }
+}

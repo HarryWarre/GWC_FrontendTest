@@ -1,0 +1,33 @@
+.partner-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa danh sách logo theo chiều ngang */
+    padding: 50px 0;
+    gap: 80px;
+    overflow: hidden;
+}
+
+.partner-section h2{
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 52px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.partner-logos {
+    display: flex;
+    justify-content: center; /* Căn giữa các logo */
+    align-items: center;
+    gap: 186px; /* Khoảng cách giữa các logo */
+    flex-wrap: none;
+    align-self: flex-start;
+    overflow: hidden;
+}
+.partner-logos img{
+    object-fit: cover;
+    width: 98.15px;
+    height: 132px;
+    gap: 0px;
+    opacity: 0px;
+}

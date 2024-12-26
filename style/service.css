@@ -1,0 +1,148 @@
+.services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+    background: url("https://s3-alpha-sig.figma.com/img/f597/71e4/acba38e4c3f3a6e123849e7fa5566871?Expires=1736121600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=k2nWOHRxbed313Kx0fR6Qh3299Nk1CDyVTbQLqw1bsvrUi4O51Y3tldwih~4n8NLaRSIsmL4~tB-GMm-nnjHIQLFVtWyLBc1KZ2cxTaVI8NMHwftR1gGPbg14e7DaK8GpEbA55sAnpm3MhQATkLE8rFz7Gsxxg8XnXuCIBKPJ3l-OTXOio-Cw6YxPPXW7xVaDV1MRyKgasqN9GMeGXRF6nBIbflrSmc9Cx1LDxcRSzXjKbQh1vnPzusaGndLZkc3Tgtdfsp4MCOyhQCH2Ssm2DqVl6d0V8GMo3HsbIb55JiKZU2EzkrO89wkJhKA5TDk~~NAt6ZYnYEla~~4NIXjKw__");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #28324880;
+	/* backdrop-filter: blur(1.5rem); */
+    /* pointer-events: none; */
+    z-index: -1;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+   /* align-items: center; */ /* Loại bỏ align-items ở đây */
+    padding: 0px;
+    gap: 40px;
+    color: white;
+}
+
+.services-content h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    color: #FAFAFA;
+    width: 100%;
+}
+.services-content-wrapper{
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1000p; */
+}
+
+.services-image-container {
+    width: 700px;
+    height: 700px;
+    position: relative;
+    display: flex;
+    justify-content: center; /* add justify-content*/
+    align-items: center;
+    margin: 0 auto;  /*  add margin */
+}
+ .services-image-circles {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	}
+.circle {
+    box-sizing: border-box;
+	position: absolute;
+	border-radius: 50%;
+}
+.circle-orange {
+    border: 1px solid #F14B23;
+    left: 7.06%;
+    right: 6.89%;
+	top: 7.06%;
+	bottom: 6.89%;
+}
+.circle-white {
+    border: 1px solid #FAFAFA;
+    left: 3.87%;
+	right: 3.87%;
+	top: 3.87%;
+	bottom: 3.87%;
+}
+
+.circle-white-border {
+  border: 1px solid #FAFAFA;
+    left: 0%;
+	right: 0%;
+	top: 0%;
+	bottom: 0%;
+}
+  .services-image-container .banner-service{
+    position: absolute;
+	left: 10.42%;
+	right: 10.25%;
+	top: 10.42%;
+	bottom: 10.25%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: calc(100% - 20.67%);
+    height: calc(100% - 20.67%);
+}
+.services-content p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FAFAFA;
+    padding-right: 30px;
+    flex: 0 0 20%;
+}
+
+.services-section .layer-btn{
+    align-self: center;
+}
+
+
+@media (max-width: 1440px) {
+   .services-content-wrapper {
+        flex-direction: column;
+    }
+     .about-us-button {
+       margin-left: auto;
+   }
+
+   .services-image-container {
+        width: 600px;
+        height: 600px;
+    }
+}
+
+@media (max-width: 425px) {
+    .services-content p {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .services-section{
+        min-height: max-content;
+    }
+   .services-image-container {
+        width: 300px;
+        height: 300px;
+    }
+}
